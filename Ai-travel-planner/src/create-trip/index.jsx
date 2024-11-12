@@ -45,9 +45,10 @@ function CreateTrip() {
     })
   }
 
-  useEffect(() => {
-    console.log(formData);
-  }, [formData])
+  // useEffect(() => {
+  //   console.log(formData);
+  // }, [formData])
+
   const login = useGoogleLogin({
     onSuccess: (codeResp) => GetUserProfile(codeResp),
     onError: (error) => console.log(error)
@@ -74,7 +75,7 @@ function CreateTrip() {
     //console.log(FINAL_PROMPT);
 
     const result = await chatSession.sendMessage(FINAL_PROMPT);
-    console.log(result?.response.text());
+    //console.log(result?.response.text());
     setLoading(false);
     SaveAiTrip(result?.response.text());
   }
