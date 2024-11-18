@@ -1,8 +1,8 @@
-import { Input } from '@/components/ui/input';
+import { Input } from '@/components/input';
 import { AI_PROMPT, SelectBudgetOptions, SelectTravelesList } from '@/constants/Options';
 import React, { useEffect, useState } from 'react'
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete'
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/button';
 //import { toast } from '@/hooks/use-toast';
 import { toast } from "sonner"
 import { chatSession } from '@/service/AIModal';
@@ -13,7 +13,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
+} from "@/components/dialog"
 //import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 import { FcGoogle } from "react-icons/fc";
 import { useGoogleLogin } from '@react-oauth/google';

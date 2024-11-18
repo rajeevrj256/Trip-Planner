@@ -4,5 +4,5 @@ WORKDIR /app
 COPY . .
 COPY .env.local .env.local
 RUN npm install
-RUN npm run build
-RUN npm run dev
+
+CMD ["npm", "run", "dev"]

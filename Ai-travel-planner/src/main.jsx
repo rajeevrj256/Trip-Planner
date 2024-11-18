@@ -3,12 +3,12 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Header from './components/ui/custom/Header'
+import Header from './components/custom/Header'
 import CreateTrip from './create-trip'
-import { Toaster } from './components/ui/sonner'
+import { Toaster } from './components/sonner'
 import { GoogleOAuthProvider } from '@react-oauth/google'
 import ViewTrip from './view-trip/[tripId]/index.jsx'
-import Mytrip from './my-trips'
+import Mytrip from './my-trips/index'
 const router=createBrowserRouter([
   {
     path:'/',
