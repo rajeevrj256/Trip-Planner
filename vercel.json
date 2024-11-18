@@ -1,14 +1,5 @@
 {
-    "builds": [
-      {
-        "src": "src/index.html",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "dist"
-        }
-      }
-    ],
-    "buildCommand": "npm run build",
-    "outputDirectory": "dist"
-  }
-  
+  "rewrites":[
+      {"source":"/(.*)","destination":"/"}
+  ]
+}
